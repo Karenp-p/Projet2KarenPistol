@@ -17,13 +17,14 @@ body {
 .logo {
     width: 50px;
     height: 15px;
+    padding-top: 21px;
 
 }
 
 .navigation {
     display: flex;
     justify-content: space-between;
-    padding: 15px 0;
+
 }
 
 .sous-titre {
@@ -38,19 +39,19 @@ body {
 }
 
 .sous-menu {
-    padding: 5px;
-    padding-top: 10px;
-    text-align: center;
-    font-weight: normal;
+    padding-top: 27px;
+	text-align: center;
+	font-weight: normal;
+    width: 50%;
 
 }
 
 .sous-menu:hover {
     cursor: pointer;
     color: #0065FC;
-    border-top: 1px solid #0065FC;
-    display: inline-block; /* Garde la largeur du texte */
-    padding-top: 5px;
+    border-top: 2px solid #0065FC;
+    display: inline-block;
+    padding-top: 25px;
     
 }
 
@@ -71,6 +72,12 @@ body {
     align-items: center;
     width: 100%;
     margin-left: 0;
+}
+
+.fa-solid.fa-location-dot {
+	color: inherit;
+	width: 20%;
+	text-align: center;
 }
 
 .input-container {
@@ -219,9 +226,6 @@ span {
 
 .hebergements-container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
 }
 
 .hebergements-container h1 {
@@ -256,26 +260,27 @@ span {
     margin-bottom: 20px;
     padding-bottom: 15px;
     padding: 6px;
-    height: 200px;
+    height: 189px;
 }
 
 .hebergement-card img {
     width: 100%;
-    height: 110px;
+    height: 107px;
     border-radius: 15px 15Px 0 0;
     object-fit: cover;
     border-bottom: 1px solid #ddd;
 }
 
 .hebergement-card h3 {
-    margin: 5px 15px;
+    margin: 5px 5px;
     font-size: 16px;
 }
 
 .hebergement-card p {
-    margin: 0 15px 5px;
-    line-height: 1.2;
+    margin: 0 5px 5px;
+    line-height: 1.6;
     color: black;
+    font-size: 14px;
 }
 
 
@@ -284,7 +289,7 @@ span {
 /* Style de la note */
 .card-rating {
     margin-left: 5px;
-    padding-left: 10Px;
+
 }
 
 .rsr-only span {
@@ -532,7 +537,9 @@ a {
     .logo {
         padding-top: 10px;
     }
-
+    .navigation {
+        margin-top: 6px;
+    }
     .menu {
             width: 28%;
             justify-content: flex-start;
@@ -541,17 +548,18 @@ a {
     
     .sous-menu {
         margin-left: -34px;
-        margin-right: 5px;
+        margin-top: -5px;
         font-size: 13px;
     }
 
     .titre-site {
-        font-size: 15px;
+        font-size: 17px;
+        margin-top: 29px;
         
     }
 
     .sous-titre {
-        font-size: 11px !important;
+        font-size: 13px !important;
     }
 
     .input-container {
@@ -559,7 +567,11 @@ a {
         border: 1px solid #f3f3f3;
         margin-bottom: 11px;
     }
-
+    .fa-solid.fa-location-dot {
+    
+        width: 35%;
+       
+    }
     .element-left {
         padding: 13px;
     }
@@ -599,7 +611,7 @@ a {
     }
 
     .fa-solid {
-        font-size: 66%;
+        font-size: 12px;
     }
 
     .text-info {
@@ -657,9 +669,7 @@ a {
         padding-left: 8Px;
     }
 
-    .fa-solid {
-        font-size: 52%;
-    }
+
 
     .populaires {
         width: 100%;
@@ -724,7 +734,7 @@ a {
     }
 
     .activity-card img {
-        width: 82%;
+        width: 100%;
         height: 141px;
         display: flex;
     }
@@ -745,20 +755,13 @@ a {
 @media (max-width: 767.98px) {
     /* ... */
 
-    .activity-card {
-        width: 90%;
-     }
-
-     .hebergement-card {
-        width: 90%;
-     }
      .logo {
-        width: 120px;
+        width: 90px;
         height: auto;
     }
      .navigation {
         flex-direction: column;
-        padding: 40px 0;
+        padding: 20px 0;
         align-items: center;
      }
 
@@ -768,94 +771,97 @@ a {
      }
      .sous-menu {
         padding: 10px;
-        font-size: 34px;
-        width: 50%;
-    
-     }
+        font-size: 20px;
+        
+        justify-content: end;
+        border-bottom: 2px solid lightgrey;
+        
+    }
 
      .sous-menu:hover {
-        border-bottom: 3px solid blue;
+        border-bottom: 2px solid blue;
         border-top: none;
     
        }
 
 
       .titre-site {
-        font-size: 45px;
+        font-size: 25px;
         margin-bottom: 10px;
       }
 
        .sous-titre{
-        font-size: 33px !important;
+        font-size: 18px !important;
        }
 
         #formulaire {
-            justify-content: center;
-            padding: 10px 0;
+        
+            padding: 10px
         }
 
          .input-container {
             max-width: 700px;
             border: 1px solid #e0e0e0;
-            border-radius: 30px;
-            height: 84px;
+            border-radius: 16px;
+            height: 49px;
          }
 
-          .element-left {
-            padding: 30px;
-            width: 25px;
-            height: 50px;
-          }
-          .element-center {
-            padding: 40px;
-            font-size: 35px;
+         .fa-solid.fa-location-dot {
+            color: inherit;
+            width: 34%;
+            text-align: center;
+        }
+
+       
+
+        .element-center {
+            padding: 15px;
+            font-size: 17px;
             text-align: left;
-          }
-          .text-info {
-            font-size: 30px;
-          }
+        }
+          
           .filters {
             flex-wrap: wrap;
             align-items: center;
             gap: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 5px;
           }
 
           .titre-filtres{
-            font-size: 35px;
+            font-size: 22px;
             margin-right: 20px;
             width: 90%;
-            font-weight:600;
-            margin-bottom: 30px;
+            font-weight: 500;
+            margin-bottom: 10px;
           }
 
           .filter-button {
             border: 4px solid lightgrey;
             border-radius: 50px;
-            padding: 8px;
-            font-size: 25px;
-            padding-left: 15px;
-            padding-right: 63px;
+            display: flex;
+            font-size: 16px;
+            padding-left: 18px;
+            width: 48%;
             font-weight: bold;
+            justify-content: normal;
         }
 
-        
-
           .filter-buttton i {
-            font-size: 46px;
-            margin-right: 25px;
-            margin-left: 24px;
+            font-size: 23px;
+            
           }
 
-         
 
-           .information {
-            width: 50px;
-            height: 40px;
-           }
-
+          .information {
+            width: 34px;
+            height: 26px;
+        }
+           
+           .text-info {
+            font-size: 16px;
+          }
             .fa-solid {
-            font-size: 20px;
+                font-size: 20px;
             }
 
             .hebergements-and-populaires {
@@ -870,9 +876,8 @@ a {
 
             /* les plus populaires */
             .section-title {
-                font-size: 40px;
-                padding-bottom: 16px;
-
+                font-size: 25px;
+                margin: -40px;
             }
 
             .populaires {
@@ -881,9 +886,9 @@ a {
             }
 
             .populaires-cards {
-                flex-direction: column;
-                width: 100%;
-                margin-top: 22px;
+                margin-top: -18px;
+                flex-wrap: wrap;
+                justify-content: space-around;
             }
             .populaires-cards a {
                 width: 100%;
@@ -894,85 +899,87 @@ a {
             }
 
             .populaires-cards img {
-                height: 264px;
-                border-top-left-radius: 30px;
-                border-bottom-left-radius: 30px;
-                padding: 5px;
-                width: 198px;
+                height: 167px;
+                border-top-left-radius: 22px;
+                border-bottom-left-radius: 22px;
+                width: 130px;
             }
             .populaires-cards .card {
-                margin-bottom: -28px;
-                margin-top: 48px;
-                margin-left: -44px;
+            
+                margin-top: 43px;
+                margin-left: -50px;
             }
             .populaires-cards .card-title {
-                font-size: 30px;
+                font-size: 20px;
             }
 
             .populaires-cards .card-subtitle {
-                font-size: 27px;}
+                font-size: 18px;}
 
          /* hebergements a marseille */
 
             .hebergements-container h1 {
-                font-size: 40px;
+                font-size: 24px;
+                margin-left: -38px;
             }
 
             .hebergement-card {
                 width: 100%;
-                height: 391px;
+                height: 249px;
+                margin-left: -41px;
             }
             .hebergement-card img {
-                height: 226px;
+                height: 129px;
             }
             .hebergement-card h3 {
                 margin: 10px 15px;
-                font-size: 34px;
+                font-size: 18px;
             }
             .hebergement-card p {
                 margin: 0px 15px;
-                font-size: 28px;
+                font-size: 15px;
             }
             .card-rating {
                 margin-left: 5px;
-                margin-top: 25px;
+                margin-top: 17px;
                 padding-left: 8Px;
             }
-            .fa-solid {
-                font-size: 26px;
-            }
+            
 
             .afficher-plus a {
-                font-size: 33px;
+                font-size: 22px;
             }
 
              /* activites a marseille */
              .activites {
-                font-size: 48px;
+                font-size: 25px;
                 padding-left: 1px;
             }
 
             .activities-container {
-                padding-top: 33px;
+                padding-top: 17px;
                 flex-wrap: wrap;
             }
             .activity-card img {
                 width: 100%;
-                height: 279px;
-                padding-bottom: 26px;
+                height: 166px;
+                padding-bottom: 10px;
                 
             }
             .activity-card {
                 width: 100%;
-                border-radius: 38px;
-                padding-bottom: 10px;
+                border-radius: 24px;
+               
             }
 
             .activity-card p {
-                font-size: 30px;
-                padding-left: 35px;
+                font-size: 18px;
+                padding-left: 22px;
             }
-
+            .footer {
+                background-color: #ffffff;
+                width: 114%;
+            }
             .footer-column {
                 width: 100%;
                 min-width: 200px;
@@ -980,10 +987,10 @@ a {
             }
 
             .footer-column h3 {
-                font-size: 34px;
+                font-size: 20px;
             }
             .footer-column ul li a {
-                font-size: 32px;
+                font-size: 17px;
             }
 
             .footer-column ul li {
