@@ -690,7 +690,7 @@ a {
     }
 
     .populaires-cards {
-        justify-content: none;
+        
         gap: 3%;
         padding-bottom: 28px;
     }
